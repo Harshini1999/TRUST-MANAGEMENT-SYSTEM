@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>HELLO</H1>
+<h2>YOU ARE READY TO BUY</H2>
+<button onclick="myFunction()">GET INFO</button>
+<button onclick="myFunction1()">FOOD INFO</button>
+<button onclick="myFunction2()">QUANTITY INFO</button>
+<p id="demo"> Varsha offered food for 30 children!!</p>
+<p id="demo1">Varsha offered 4.7kg food,in round</p>
+<script>
+function myFunction() {
+var text1 = "VARSHA";
+var text2 = "KUMAR";
+var text3 = text1.concat(" ",text2);
+
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Varsha",text3);
+  document.getElementById("demo").innerHTML = txt;
+
+}
+function myFunction1() {
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+}
+function myFunction2()
+{
+
+document.getElementById("demo").innerHTML = Math.floor(4.7);
+
+}
+</script>
+</body>
+</html>
